@@ -10,7 +10,7 @@ wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo DEBIAN_FRONTEND=noninteractive \
-sudo apt update && sudo add-apt-repository ppa:ubuntudde-dev/stable -y && sudo apt install ubuntudde-dde
+sudo add-apt-repository ppa:ubuntukylin-members/ukui -y && sudo apt update && sudo apt install ukui-desktop-environment
 sudo apt install --assume-yes xscreensaver
 sudo systemctl disable lightdm.service
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
