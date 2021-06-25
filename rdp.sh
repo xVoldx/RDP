@@ -12,12 +12,12 @@ sudo apt install --assume-yes --fix-broken
 sudo DEBIAN_FRONTEND=noninteractive \
 sudo add-apt-repository ppa:ubuntukylin-members/ukui -y && sudo apt update && sudo apt install ukui-desktop-environment
 sudo apt install --assume-yes xscreensaver
-sudo systemctl disable lightdm.service
+sudo apt install nautilus nano -y 
+sudo apt-get install xbase-clients python3-psutil xvfb -y
+#sudo systemctl disable lightdm.service
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
-sudo apt install nautilus nano -y 
-sudo apt-get install xbase-clients python3-psutil xvfb -y
 sudo adduser RCA chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
